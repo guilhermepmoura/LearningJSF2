@@ -9,6 +9,7 @@ public class StudentOne {
 	private String email;
 	private String postalCode;
 	public int freePasses;
+	public String phoneNumber;
 	
 	
 	public StudentOne() {
@@ -54,6 +55,12 @@ public class StudentOne {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	
 	

@@ -61,6 +61,21 @@
 	 
 	 <br/><br/>
 	
+	Phone number: <h:inputText value="#{studentOne.phoneNumber}"
+				 label = "Phone Number"
+				 id= "phone_number"
+				 validatorMessage="Phone number must follow ddd-xxxxx-xxxx" >
+				 <f:validateRegex pattern ="\d{2}-\d{5}-\d{4}" />	 
+				 
+	 <br/><br/>
+				 
+	 </h:inputText>
+	
+	<h:message for="phone_number" styleClass="erro" />
+	
+	 <br/><br/>
+	
+	
 	<h:commandButton value ="Submit" action ="student_one_response" />
 	
 	</h:form>
