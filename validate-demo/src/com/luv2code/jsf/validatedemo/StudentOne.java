@@ -7,10 +7,30 @@ public class StudentOne {
 	private String firstName;
 	private String lastName;
 	private String email;
+	private String postalCode;
+	public int freePasses;
+	
 	
 	public StudentOne() {
 		
 	}
+	public int getFreePasses() {
+		return freePasses;
+	}
+
+	public String getPostalCode() {
+		return postalCode;
+	}
+
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
+	}
+
+	public void setFreePasses(int freePasses) {
+		this.freePasses = freePasses;
+	}
+
+	
 
 	public String getFirstName() {
 		return firstName;
