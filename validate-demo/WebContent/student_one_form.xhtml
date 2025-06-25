@@ -75,7 +75,16 @@
 	
 	 <br/><br/>
 	
+	Course Code: <h:inputText value ="#{studentOne.courseCode}"
+							  label= "Course Code"
+							  id="course_code"
+							  validator="#{studentOne.validateCourseCode}" />
 	
+	<h:message for="course_code" styleClass="error" />
+	
+	 <br/><br/>
+	
+				
 	<h:commandButton value ="Submit" action ="student_one_response" />
 	
 	</h:form>
