@@ -17,19 +17,28 @@
 	
 	<h:form>
 	
-	<h:messages styleClass="error" />
-	
 	First name: <h:inputText value="#{studentOne.firstName}"
 							label="First Name" />
 	<br/><br/>
 	Last name: <h:inputText value="#{studentOne.lastName}"
 							label="Last name"
-							required="true" />
+							required="true" 
+							id="last_name" 
+							requiredMessage = "Your last name is mandatory"/>
+	<h:message for="last_name" styleClass="error" />
+		
 	<br/><br/>
+	
 	Email: <h:inputText value="#{studentOne.email}"
 						label="Email"
-						required = "true" />
+						required = "true" 
+						id="email" 
+						requiredMessage = "Your email is mandatory"/>
+						
+		<h:message for="email" styleClass="error" />	
+					
 	<br/><br/>	
+	
 	<h:commandButton value ="Submit" action ="student_one_response" />
 	</h:form>
 	</h:body>
